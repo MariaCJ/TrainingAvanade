@@ -219,6 +219,29 @@
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "Trainingapplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "TrainingCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Trainingapplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Trainingapplication.dll": {}
+        }
+      },
+      "TrainingCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/TrainingCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TrainingCore.dll": {}
+        }
       }
     }
   },
@@ -497,12 +520,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Trainingapplication/1.0.0": {
+      "type": "project",
+      "path": "../Trainingapplication/Trainingapplication.csproj",
+      "msbuildProject": "../Trainingapplication/Trainingapplication.csproj"
+    },
+    "TrainingCore/1.0.0": {
+      "type": "project",
+      "path": "../TrainingCore/TrainingCore.csproj",
+      "msbuildProject": "../TrainingCore/TrainingCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "NReco.Logging.File >= 1.1.2",
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "Trainingapplication >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -531,7 +565,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\maria.c.rojas.rios\\TrainingAvanade\\Trainingapplication\\Trainingapplication.csproj": {
+              "projectPath": "C:\\Users\\maria.c.rojas.rios\\TrainingAvanade\\Trainingapplication\\Trainingapplication.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
